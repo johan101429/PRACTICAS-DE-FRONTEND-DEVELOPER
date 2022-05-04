@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--<link rel=StyleSheet href="style.css" type="text/css" media=screen>-->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <title>contraseña</title>
 
@@ -58,7 +57,7 @@
             font-size: var(--sm);
             text-align: center;
             text-decoration: none;
-            margin-bottom: 54px;
+            margin-bottom: 52px;
         }
         
         .label {
@@ -78,8 +77,9 @@
             margin-bottom: 12px;
         }
         
-        .inptu-email {
-            margin-bottom: 24px;
+        .input-email,
+        .input-password {
+            margin-bottom: 22px;
         }
         
         .primary-button {
@@ -96,14 +96,15 @@
         
         .secondary-button {
             background-color: var(--white);
-            border-radius: 10px;
+            border-radius: 8px;
             border: 1px solid var(--hospital-green);
-            color: var(--black);
+            color: var(--hospital-green);
             width: 100%;
             cursor: pointer;
             font-size: var(--md);
             font-weight: bold;
-            height: 70px;
+            height: 50px;
+            justify-content: space-between;
         }
         
         .login-button {
@@ -112,7 +113,10 @@
         }
         
         @media (max-width: 640px) {
-            .secondary-button {
+            .logo {
+                display: block;
+            }
+            .form {
                 height: 100%;
                 justify-content: space-between;
             }
@@ -128,14 +132,17 @@
 
             <form action="/" class="form">
                 <label for="email" class="label">Email address</label>
-                <input type="text" id="email" placeholder="ejemplo@gamil.com" class="input input-email">
+                <input type="text" id="email" placeholder="correo@ejemplo.com" class="input input-email">
 
                 <label for="password" class="label">password</label>
                 <input type="password" id="password" placeholder="**********" class="input input-password">
-                <input type="submit" value="log in" class="primary-button login-button">
+                <input type="submit" value="Log in " class="primary-button login-button">
                 <a href="/">forgot my password</a>
             </form>
-            <button class="secondary-button signup">sign up</button>
+
+            <button class="secondary-button signup-button"> sign up</button>
+
+
         </div>
     </div>
 </body>
